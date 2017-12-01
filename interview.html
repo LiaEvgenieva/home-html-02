@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview</title>
+</head>
+<body>
+    <form method="POST" action="https://formspree.io/juli.evgenievna@gmail.com">
+        <h2>What kind of cats do you like?</h2>
+        <fieldset>
+            <legend>Personal information</legend>
+            <ol>
+                <li>
+                    <label>
+                    First name:
+                    <br>
+                    <input type="text" name="firstname" required>
+                    </label>
+               </li>
+               <li>
+                    <label>
+                    Last name:
+                    <br>
+                    <input type="text" name="lastname" required>
+                    </label>
+                </li>
+                <li>
+                    Your sex:
+                    <br>
+                    <label>
+                    <input type="radio" name="gender" value="male"/>Mail
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="gender" value="femail"/>Femail
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="gender" value="other"/>Other
+                    </label>
+                </li>
+                <li>
+                    <label>
+                    Date of Birth:
+                    <br>
+                    <input type="data" name="birdth" value="01/01/1980" required>
+                    </label>
+                </li>
+            </ol>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Your pet</legend>
+            <ol start="5">
+               <li> 
+                    <label>
+                        Do you have any pet?
+                        <br>
+                        <input type="radio" name="yes" value="yes">Yes
+                        <input type="radio" name="no" value="no">No
+                    </label>
+                </li>
+               <li>
+                    <label>
+                        What pet do you have?
+                        <br>
+                        <input type="text" name="text" required>
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Where do you want to take a pet?
+                        <br>
+                        <select name="pet">
+                            <option value="buy">I will buy</option>
+                            <option value="shelter">I will take in the shelter</option>
+                            <option value="gift">I will be given a pet</option>
+                        </select>
+                    </label>
+                </li>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Your preferences</legend>
+            <ol start="8">
+               <li>
+                   <label>
+                       Color of cat
+                       <br>
+                       <input type="color" name="cat-color">
+                   </label>
+               </li> 
+               <li>
+                   <label>
+                       Length of coat
+                       <br>
+                       <select name="coat">
+                            <option value="hairless">Hairless</option>
+                            <option value="short">Short</option>
+                            <option value="medium">Medium</option>
+                            <option value="long">Long</option>
+                            <option value="semi Long">Semi Long</option>
+                        </select>
+                   </label>
+               </li>
+               <li>
+                   <label>
+                       Size
+                       <br>
+                       <input type="checkbox" value="small">Small
+                       <input type="checkbox" value="medium">Medium
+                       <input type="checkbox" value="big">Big
+                   </label>
+               </li>
+            </ol>
+        </fieldset>
+        
+        <fieldset>
+            <input type="submit" value="Send">
+            <input type="reset" value="Reset">
+        </fieldset>
+        
+    </form>
+</body>
+</html>
